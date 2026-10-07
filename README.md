@@ -1,3 +1,10 @@
+# INTEGRANTES
+- Guilherme Gonçalves Sampaio Santos — 568727
+- Lucas Rufato Todesco — 572771
+- Marcos Vinícius Anastacio Miurin — 571519
+- Vinicius de Souza Christovam — 571492
+
+
 # SentinelAI — ASPM (Application Security Posture Management)
 > Protótipo técnico | Python + PyQt6
 
