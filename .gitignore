@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Ambientes virtuais ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Configs sensíveis / chaves de API ---
+.env
+.env.*
+*.key
+
+# --- Dados gerados em runtime (específicos de quem roda o app) ---
+# data/samples/*.json continuam versionados (fixtures de exemplo);
+# só os arquivos que o próprio app grava em disco ficam de fora.
+data/company_context.json
+data/assets.json
+data/settings.json
+data/findings.json
+data/scans.json
+data/threat_intel.json
+data/*.json.tmp
+
+# --- PyQt / build ---
+build/
+dist/
+*.egg-info/
+*.spec
+
+# --- Editor / SO ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log

@@ -1,0 +1,106 @@
+{
+  "projectName": "legacy-monolith",
+  "displayTargetFile": "pom.xml + package.json",
+  "vulnerabilities": [
+    {
+      "id": "SNYK-JAVA-LOG4J-2321524",
+      "title": "Remote Code Execution via JNDI Lookup (Log4Shell)",
+      "severity": "medium",
+      "packageName": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1",
+      "description": "O log4j2 até a versão 2.14.1 permite que atacantes executem código arbitrário via lookups JNDI habilitados por padrão em mensagens de log não confiáveis. Explorada em massa em dezembro de 2021 (Log4Shell) e desde então usada como vetor inicial em campanhas de ransomware.",
+      "cvssScore": "6.0",
+      "fixedIn": ["2.17.1"],
+      "identifiers": {
+        "CVE": ["CVE-2021-44228"],
+        "CWE": ["CWE-502"]
+      }
+    },
+    {
+      "id": "SNYK-JAVA-STRUTS-1090008",
+      "title": "Remote Code Execution via OGNL (Struts2 S2-045)",
+      "severity": "critical",
+      "packageName": "org.apache.struts:struts2-core",
+      "version": "2.3.31",
+      "description": "O parser de upload Jakarta Multipart do Struts2 permite execução remota de código através de um cabeçalho Content-Type malicioso. Foi o vetor usado na invasão da Equifax em 2017, expondo dados de mais de 140 milhões de pessoas.",
+      "cvssScore": "10.0",
+      "fixedIn": ["2.3.32"],
+      "identifiers": {
+        "CVE": ["CVE-2017-5638"],
+        "CWE": ["CWE-20"]
+      }
+    },
+    {
+      "id": "SNYK-JAVA-SPRING-2436751",
+      "title": "Remote Code Execution via Data Binding (Spring4Shell)",
+      "severity": "high",
+      "packageName": "org.springframework:spring-beans",
+      "version": "5.3.17",
+      "description": "Aplicações Spring MVC/WebFlux rodando em JDK 9+ podem ser exploradas remotamente via data binding malicioso de parâmetros de classe, resultando em execução de código no servidor.",
+      "cvssScore": "9.8",
+      "fixedIn": ["5.3.18"],
+      "identifiers": {
+        "CVE": ["CVE-2022-22965"],
+        "CWE": ["CWE-94"]
+      }
+    },
+    {
+      "id": "SNYK-JS-JSONWEBTOKEN-3180026",
+      "title": "Improper Authentication (bypass de assinatura)",
+      "severity": "critical",
+      "packageName": "jsonwebtoken",
+      "version": "8.5.1",
+      "description": "jsonwebtoken < 9.0.0 não valida corretamente a assinatura em certos algoritmos, permitindo que um atacante forje tokens e faça bypass de autenticação. Vulnerabilidade grave, mas sem registro de exploração ativa em massa até o momento.",
+      "cvssScore": "9.1",
+      "fixedIn": ["9.0.0"],
+      "identifiers": {
+        "CVE": ["CVE-2022-23529"],
+        "CWE": ["CWE-287"]
+      }
+    },
+    {
+      "id": "SNYK-PHP-DRUPAL-DRUPALGEDDON2",
+      "title": "Remote Code Execution (Drupalgeddon2)",
+      "severity": "high",
+      "packageName": "drupal/core",
+      "version": "7.57",
+      "description": "Falha de validação de entrada no Form API do Drupal permite execução remota de código sem autenticação. Amplamente varrida e explorada em massa por botnets logo após a divulgação pública.",
+      "cvssScore": "9.8",
+      "fixedIn": ["7.58"],
+      "identifiers": {
+        "CVE": ["CVE-2018-7600"],
+        "CWE": ["CWE-20"]
+      }
+    },
+    {
+      "id": "SNYK-JS-TRIMNEWLINES-1091850",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "severity": "low",
+      "packageName": "trim-newlines",
+      "version": "3.0.0",
+      "description": "Versões afetadas de trim-newlines são vulneráveis a ReDoS ao processar strings de entrada especialmente construídas, causando lentidão. Impacto limitado e sem indícios de exploração real.",
+      "cvssScore": "3.7",
+      "fixedIn": ["3.0.1"],
+      "identifiers": {
+        "CVE": ["CVE-2021-33623"],
+        "CWE": ["CWE-1333"]
+      }
+    },
+    {
+      "id": "SNYK-JS-RANDOMSTRINGGEN-CUSTOM01",
+      "title": "Insecure Randomness na geração de tokens",
+      "severity": "medium",
+      "packageName": "random-string-generator",
+      "version": "1.2.0",
+      "description": "A biblioteca usa Math.random() para gerar tokens de sessão, um gerador não criptograficamente seguro e previsível. Não possui CVE público associado — é um achado sem sinal de CISA KEV/EPSS, para contraste com os itens acima.",
+      "cvssScore": "5.3",
+      "fixedIn": ["2.0.0"],
+      "identifiers": {
+        "CVE": [],
+        "CWE": ["CWE-330"]
+      }
+    }
+  ],
+  "dependencyCount": 187,
+  "packageManager": "maven+npm"
+}
