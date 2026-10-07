@@ -1,9 +1,11 @@
 # INTEGRANTES
+
 - Guilherme Gonçalves Sampaio Santos — 568727
 - Lucas Rufato Todesco — 572771
 - Marcos Vinícius Anastacio Miurin — 571519
 - Vinicius de Souza Christovam — 571492
 
+---
 
 # SentinelAI — ASPM (Application Security Posture Management)
 > Protótipo técnico | Python + PyQt6
@@ -312,3 +314,9 @@ abaixo:
 Veja `packaging/INSTALACAO.md` — transforma o projeto em um
 `SentinelAI_Setup.exe` que instala sem precisar de Python nem pip na máquina
 do usuário final.
+
+## Licença
+Este projeto é software livre, licenciado sob a **GNU General Public License v3
+(GPL v3)** — veja o arquivo [`LICENSE.md`](LICENSE.md). Cada arquivo de código
+(`.py`) traz o aviso de copyright e o identificador `SPDX-License-Identifier:
+GPL-3.0-only` no cabeçalho.
